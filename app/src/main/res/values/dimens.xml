@@ -1,7 +1,12 @@
 <resources>
     <dimen name="fab_margin">16dp</dimen>
 
+    <dimen name="layout_margin">20dp</dimen>
     <dimen name="default_text_size">20sp</dimen>
+
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_normal">16dp</dimen>
+    <dimen name="margin_large">24dp</dimen>
 
     <dimen name="loading_button_text_size">@dimen/default_text_size</dimen>
 </resources>
