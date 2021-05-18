@@ -50,6 +50,7 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, R.string.radio_group_unchecked_toast_text, Toast.LENGTH_LONG)
                 .show()
         } else {
+            custom_button.changeButtonState(ButtonState.Loading)
             val request =
                 DownloadManager.Request(Uri.parse(URL))
                     .setTitle(getString(R.string.app_name))
@@ -70,16 +71,16 @@ class MainActivity : AppCompatActivity() {
             when (view.id) {
                 R.id.radio_glide ->
                     if (checked) {
-                        URL = "https://github.com/bumptech/glide"
+                        URL = getString(R.string.glide_url)
                     }
                 R.id.radio_app ->
                     if (checked) {
                         URL =
-                            "https://github.com/udacity/nd940-c3-advanced-android-programming-project-starter/archive/master.zip"
+                            getString(R.string.app_url)
                     }
                 R.id.radio_retrofit ->
                     if (checked) {
-                        URL = "https://github.com/square/retrofit"
+                        URL = getString(R.string.retrofit_url)
                     }
             }
         }

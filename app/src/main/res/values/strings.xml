@@ -10,6 +10,7 @@
 
     <string name="button_name">Click me</string>
     <string name="button_loading">We are loading </string>
+    <string name="button_download">Download</string>
     <string name="title_activity_detail">DetailActivity</string>
 
     <string name="radio_glide_text">Glide - Image Loading Library by BumpTech</string>
@@ -18,4 +19,8 @@
     <string name="radio_group_unchecked_toast_text">Please select the file to download</string>
 
     <string name="cloud_image_description">Download cloud image</string>
+
+    <string name="glide_url">https://github.com/bumptech/glide</string>
+    <string name="app_url">https://github.com/udacity/nd940-c3-advanced-android-programming-project-starter/archive/master.zip</string>
+    <string name="retrofit_url">https://github.com/square/retrofit</string>
 </resources>
