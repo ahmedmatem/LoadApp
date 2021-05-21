@@ -60,11 +60,12 @@ class MainActivity : AppCompatActivity() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             val channel =
                 NotificationChannel(channelId, name, NotificationManager.IMPORTANCE_DEFAULT)
-                    .also {
-                        it.description = getString(R.string.notification_description)
-                        it.enableLights(true)
-                        it.lightColor = getColor(R.color.colorAccent)
-                        it.enableVibration(true)
+                    .apply {
+                        description = getString(R.string.notification_description)
+                        enableLights(true)
+                        lightColor = getColor(R.color.colorAccent)
+                        enableVibration(true)
+                        setShowBadge(false)
                     }
             // Register the channel with the system
             notificationManager.createNotificationChannel(channel)
@@ -101,6 +102,11 @@ class MainActivity : AppCompatActivity() {
             .setAutoCancel(true)
             .setStyle(bigPicStyle)
             .setLargeIcon(glideLargeIcon)
+            .addAction(
+                R.drawable.ic_assistant_black_24dp,
+                getString(R.string.notification_button),
+                contentPendingIntent
+            )
 
         notify(NOTIFICATION_ID, builder.build())
     }
