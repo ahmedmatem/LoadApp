@@ -31,4 +31,5 @@
     <string name="file_name_value">File name</string>
     <string name="status_label">Status</string>
     <string name="ok_button">ok</string>
+    <string name="swipe_hint">Drag down to see animation</string>
 </resources>
