@@ -14,6 +14,10 @@
     <string name="button_download">Download</string>
     <string name="title_activity_detail">DetailActivity</string>
 
+    <string name="glide_file_name">Glide - Image Loading Library by BumpTech</string>
+    <string name="app_file_name">Load App - Current repository by Udacity</string>
+    <string name="retrofit_file_name">Retrofit - Type-safe HTTP Client for Android and Java by Square, Inc</string>
+
     <string name="radio_glide_text">Glide - Image Loading Library by BumpTech</string>
     <string name="radio_app_text">Load App - Current repository by Udacity</string>
     <string name="radio_retrofit_text">Retrofit - Type-safe HTTP Client for Android and Java by Square, Inc</string>
@@ -24,4 +28,7 @@
     <string name="glide_url">https://github.com/bumptech/glide</string>
     <string name="app_url">https://github.com/udacity/nd940-c3-advanced-android-programming-project-starter/archive/master.zip</string>
     <string name="retrofit_url">https://github.com/square/retrofit</string>
+    <string name="file_name_value">File name</string>
+    <string name="status_label">Status</string>
+    <string name="ok_button">ok</string>
 </resources>
